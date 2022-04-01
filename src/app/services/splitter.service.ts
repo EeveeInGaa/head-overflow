@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class SplitterService {
-  private splitters = [];
+  private splitters: string[] = [];
 
   constructor() {}
 
@@ -12,7 +12,7 @@ export class SplitterService {
     this.splitters.push(splitter);
   }
 
-  getAll() {
-    return [...this.splitters];
+  getAll(): string[] {
+    return this.splitters;
   }
 }

@@ -7,19 +7,19 @@ import { SplitterService } from '../services/splitter.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
-  public splitters = [];
+  public splitters: string[] = [];
 
   constructor(private readonly splitterService: SplitterService) {}
 
   ngOnInit(): any {
-    //this.splitters = this.getAllSplitters();
+    this.splitters = this.getAllSplitters();
   }
 
   addSplitter(text: string) {
     this.splitterService.add(text);
   }
 
-  getAllSplitters() {
-    this.splitterService.getAll();
+  getAllSplitters(): string[] {
+    return this.splitterService.getAll();
   }
 }
