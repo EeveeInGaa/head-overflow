@@ -8,7 +8,7 @@ export class SplitterService {
 
   constructor() {}
 
-  add(splitter) {
+  add(splitter: string) {
     this.splitters.push(splitter);
   }
 
