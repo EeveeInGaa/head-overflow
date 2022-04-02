@@ -12,12 +12,15 @@
       #input
     >
     </ion-textarea>
-    <ion-button
-      [disabled]="input.value === ''"
-      (click)="addSplitter(input.value); input.value = ''"
-      shape="round"
-      >ADD</ion-button
-    >
+    <div class="button-wrapper">
+      <button
+        [disabled]="input.value === ''"
+        (click)="addSplitter(input.value); input.value = ''"
+        class="add-button"
+      >
+        ADD
+      </button>
+    </div>
   </div>
   <ion-list *ngFor="let splitter of splitters.slice().reverse()">
     <div>{{ splitter }}</div>
