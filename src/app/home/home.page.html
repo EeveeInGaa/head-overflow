@@ -23,6 +23,11 @@
     </div>
   </div>
   <ion-list *ngFor="let splitter of splitters.slice().reverse()">
-    <div>{{ splitter }}</div>
+    <div>
+      <div class="seperator-wrapper">
+        <p class="seperator">+ + + + + + + + + + + + + + +</p>
+      </div>
+      <div class="splitter">{{ splitter }}</div>
+    </div>
   </ion-list>
 </ion-content>
