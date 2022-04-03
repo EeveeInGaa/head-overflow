@@ -7,7 +7,7 @@ import { SplitterService } from '../services/splitter.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
-  public splitters: string[] = [];
+  public splitters: string[] | undefined[] = [];
 
   constructor(private readonly splitterService: SplitterService) {}
 
