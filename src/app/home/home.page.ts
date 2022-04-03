@@ -7,7 +7,7 @@ import { SplitterService } from '../services/splitter.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
-  public splitters: string[] | undefined[] = [];
+  public splitters: Promise<string[]>;
 
   constructor(private readonly splitterService: SplitterService) {}
 
@@ -17,9 +17,11 @@ export class HomePage implements OnInit {
 
   addSplitter(text: string) {
     this.splitterService.add(text);
+    console.log(this.splitters);
+    console.log('text:', text);
   }
 
-  getAllSplitters(): string[] {
+  getAllSplitters(): Promise<string[]> {
     return this.splitterService.getAll();
   }
 }

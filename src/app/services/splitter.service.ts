@@ -24,8 +24,8 @@ export class SplitterService {
     await this._storage?.set('splitters', this.splitters);
   }
 
-  getAll(): string[] {
-    return this._storage?.get('splitters').then((spltr: string[]) => {
+  async getAll(): Promise<string[]> {
+    return await this._storage?.get('splitters').then((spltr: string[]) => {
       this.splitters = spltr === null ? [] : spltr;
       return this.splitters;
     });

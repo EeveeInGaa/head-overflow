@@ -23,7 +23,7 @@
       </button>
     </div>
   </div>
-  <ion-list *ngFor="let splitter of splitters.slice().reverse()">
+  <ion-list *ngFor="let splitter of splitters | async">
     <div>
       <div class="seperator-wrapper">
         <p class="seperator">+ + + + + + + + + + + + + + +</p>

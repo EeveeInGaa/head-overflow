@@ -5,9 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { ReversePipe } from '../pipes/reverse.pipe';
 
 @NgModule({
   imports: [CommonModule, FormsModule, IonicModule, HomePageRoutingModule],
-  declarations: [HomePage],
+  declarations: [HomePage, ReversePipe],
 })
 export class HomePageModule {}
