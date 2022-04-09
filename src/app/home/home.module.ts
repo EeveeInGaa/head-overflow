@@ -6,9 +6,10 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { SeparatorComponent } from '../components/separator/separator.component';
+import { HeadingComponent } from '../components/heading/heading.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, IonicModule, HomePageRoutingModule],
-  declarations: [HomePage, SeparatorComponent],
+  declarations: [HomePage, SeparatorComponent, HeadingComponent],
 })
 export class HomePageModule {}
