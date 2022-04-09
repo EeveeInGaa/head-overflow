@@ -8,6 +8,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { SeparatorComponent } from '../components/separator/separator.component';
 import { HeadingComponent } from '../components/heading/heading.component';
 import { ButtonComponent } from '../components/button/button.component';
+import { SplitterComponent } from '../components/splitter/splitter.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, IonicModule, HomePageRoutingModule],
@@ -16,6 +17,7 @@ import { ButtonComponent } from '../components/button/button.component';
     SeparatorComponent,
     HeadingComponent,
     ButtonComponent,
+    SplitterComponent,
   ],
 })
 export class HomePageModule {}
