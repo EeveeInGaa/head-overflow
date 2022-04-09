@@ -1,0 +1,23 @@
+:host {
+  all: unset;
+  font-size: 0.8rem;
+  letter-spacing: 1.3px;
+  padding: 0.3rem 1.3rem 0.3rem 1.2rem;
+  border-radius: 3rem;
+  margin: 0 1rem 1rem 0;
+  font-style: italic;
+  color: #f1f1f1;
+  background-color: #629544;
+
+  &:disabled {
+    all: unset;
+    font-size: 0.8rem;
+    letter-spacing: 1.3px;
+    padding: 0.3rem 1.3rem 0.3rem 1.2rem;
+    border-radius: 3rem;
+    margin: 0 1rem 1rem 0;
+    font-style: italic;
+    color: #f1f1f180;
+    background-color: #62954480;
+  }
+}

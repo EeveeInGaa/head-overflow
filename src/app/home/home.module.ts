@@ -7,9 +7,15 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { SeparatorComponent } from '../components/separator/separator.component';
 import { HeadingComponent } from '../components/heading/heading.component';
+import { ButtonComponent } from '../components/button/button.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, IonicModule, HomePageRoutingModule],
-  declarations: [HomePage, SeparatorComponent, HeadingComponent],
+  declarations: [
+    HomePage,
+    SeparatorComponent,
+    HeadingComponent,
+    ButtonComponent,
+  ],
 })
 export class HomePageModule {}
