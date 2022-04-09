@@ -1,10 +1,7 @@
-<ion-header [translucent]="false" class="ion-no-border">
-  <h1>Head Overflow</h1>
-</ion-header>
+<app-header>Head Overflow</app-header>
 
 <ion-content [fullscreen]="true">
-  <h2>SPLITTERS</h2>
-  <div class="line"></div>
+  <app-heading>Splitters</app-heading>
   <div class="textarea-wrapper">
     <ion-textarea
       autoGrow="true"
@@ -15,20 +12,16 @@
     </ion-textarea>
     <div class="button-wrapper">
       <button
+        add-button
         [disabled]="input.value === ''"
         (click)="addSplitter(input.value); input.value = ''"
-        class="add-button"
       >
         ADD
       </button>
     </div>
   </div>
   <ion-list *ngFor="let splitter of splitters.slice().reverse()">
-    <div>
-      <div class="seperator-wrapper">
-        <p class="seperator">+ + + + + + + + + + + + + + +</p>
-      </div>
-      <div class="splitter">{{ splitter }}</div>
-    </div>
+    <app-separator appearance="lines"></app-separator>
+    <app-splitter>{{ splitter }}</app-splitter>
   </ion-list>
 </ion-content>

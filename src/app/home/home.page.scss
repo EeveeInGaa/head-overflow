@@ -1,37 +1,8 @@
-ion-header {
-  background: #547731;
-  color: #d1dec0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  h1 {
-    margin: 1.8rem 0 1rem 0;
-    font-size: 2.7rem;
-    letter-spacing: 1.3px;
-  }
-}
-
-h2 {
-  margin: 1.3rem 1rem 0.7rem 1rem;
-  font-size: 1.3rem;
-  letter-spacing: 1.3px;
-}
-
-.line {
-  width: 60px;
-  height: 1px;
-  background-color: #ffffff;
-  margin-left: 1rem;
-}
-
 .textarea-wrapper {
   border-radius: 1.6rem;
   background-color: #3a4828;
   margin: 1rem;
 
-  .native-textarea {
-    padding: 0;
-  }
   ion-textarea {
     all: unset;
     box-sizing: border-box;
@@ -45,58 +16,12 @@ h2 {
     color: #ffffff;
     --placeholder-color: #acacac;
   }
-
   .button-wrapper {
     display: flex;
     justify-content: flex-end;
-
-    .add-button {
-      all: unset;
-      font-size: 0.8rem;
-      letter-spacing: 1.3px;
-      padding: 0.3rem 1.3rem 0.3rem 1.2rem;
-      border-radius: 3rem;
-      margin: 0 1rem 1rem 0;
-      font-style: italic;
-      color: #f1f1f1;
-      background-color: #629544;
-    }
-    .add-button:disabled {
-      all: unset;
-      font-size: 0.8rem;
-      letter-spacing: 1.3px;
-      padding: 0.3rem 1.3rem 0.3rem 1.2rem;
-      border-radius: 3rem;
-      margin: 0 1rem 1rem 0;
-      font-style: italic;
-      color: #f1f1f180;
-      background-color: #62954480;
-    }
   }
 }
 
 ion-list {
   all: unset;
-  .seperator-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    .seperator {
-      margin: 0;
-      color: #f1f1f180;
-      font-size: 0.8rem;
-    }
-  }
-  .splitter {
-    font-size: 0.8rem;
-    line-height: 1.6rem;
-    letter-spacing: 1.3px;
-    padding: 1rem 1.5rem;
-    word-break: break-word;
-    white-space: pre-wrap;
-    color: #ffffff;
-    border-radius: 1.6rem;
-    background-color: #3a4828;
-    margin: 1rem;
-  }
 }
