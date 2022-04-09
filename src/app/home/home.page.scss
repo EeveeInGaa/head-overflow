@@ -77,16 +77,6 @@ h2 {
 
 ion-list {
   all: unset;
-  .seperator-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    .seperator {
-      margin: 0;
-      color: #f1f1f180;
-      font-size: 0.8rem;
-    }
-  }
   .splitter {
     font-size: 0.8rem;
     line-height: 1.6rem;
